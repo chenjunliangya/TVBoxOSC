@@ -79,7 +79,7 @@ public class ApiConfig {
     }
 
     public void loadConfig(boolean useCache, LoadConfigCallback callback, Activity activity) {
-        String apiUrl = Hawk.get(HawkConfig.API_URL, "这里改为接口地址失效内置接口");
+        String apiUrl = Hawk.get(HawkConfig.API_URL, "http://饭太硬.ga/x/o.json");
         if (apiUrl.isEmpty()) {
             callback.error("-1");
             return;
